@@ -31,22 +31,22 @@
     <div class="modal" id="appointmentModal">
         <div class="modal-content">
             <h2>Appointment Form</h2>
-            <form id="appointmentForm">
+            <form id="appointmentForm" action="/submit-appointment" method="POST">
                 <label for="name">Full Name:</label>
                 <input type="text" id="name" name="name" required>
-
+            
                 <label for="age">Patient Age:</label>
                 <input type="number" id="age" name="age" required>
-
+            
                 <label for="email">Email Address:</label>
                 <input type="email" id="email" name="email" required>
-
+            
                 <label for="phone">Phone Number:</label>
                 <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
-
+            
                 <label for="description">Areas of concern, Diagnosis if applicable:</label>
                 <textarea id="description" name="description" rows="4" required></textarea>
-
+            
                 <button type="submit">Submit</button>
                 <button type="button" onclick="closeModal()">Close</button>
             </form>
